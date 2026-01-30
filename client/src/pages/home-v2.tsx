@@ -130,7 +130,7 @@ export default function Home() {
                       className="font-display text-3xl leading-[1.05] sm:text-5xl"
                       data-testid="text-hero-photo-title"
                     >
-                      Clean water, in hand.
+                      Clean water, Everywhere.
                     </div>
                     <div
                       className="mt-2 max-w-xl text-sm text-foreground/80 sm:text-base"

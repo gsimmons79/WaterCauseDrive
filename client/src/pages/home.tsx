@@ -95,7 +95,7 @@ export default function Home() {
       <main id="top">
         {/* Hero */}
         <section className="relative mx-auto max-w-6xl px-4 pt-10 sm:pt-14">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <div className="grid gap-8 lg:gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <div
               className="noise relative overflow-hidden rounded-3xl border bg-card shadow-xl lg:col-span-2"
               data-testid="section-hero-photo"
@@ -106,7 +106,7 @@ export default function Home() {
                 className="absolute right-5 top-5 z-10 hidden h-16 w-auto opacity-90 drop-shadow-sm sm:block"
                 data-testid="img-hero-logo"
               />
-              <div className="relative aspect-[16/7] bg-muted">
+              <div className="relative aspect-[4/5] sm:aspect-[16/7] bg-muted">
                 <img
                   src="/src/assets/images/hero-person.webp"
                   alt="People smiling with clean water"
@@ -180,7 +180,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 pt-4">
+              <div className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-3 sm:gap-6">
                 <Stat testId="stat-students" value="1 min" label="to take action" />
                 <Stat testId="stat-dollars" value="$10" label="typical student donation" />
                 <Stat testId="stat-share" value="1 share" label="can inspire more" />
@@ -284,7 +284,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-2 flex flex-col gap-3 sm:flex-row">
+                <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-stretch">
                   <label className="flex-1" htmlFor="amount">
                     <span className="sr-only">Donation amount</span>
                     <input

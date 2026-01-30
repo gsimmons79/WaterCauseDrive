@@ -20,14 +20,19 @@ export default function Home() {
             href="#top"
             className="flex items-center gap-2"
             data-testid="link-logo"
-            aria-label="Clean Water Campus Challenge"
+            aria-label="charity: water"
           >
-            <div className="grid size-9 place-items-center rounded-xl bg-primary/10 text-primary">
-              <Droplets className="size-5" strokeWidth={2.25} />
+            <div className="grid size-9 place-items-center rounded-xl bg-primary/15 text-foreground">
+              <img
+                src="/src/assets/images/water-drop-logo.jpg"
+                alt="charity: water"
+                className="size-5 object-contain"
+                data-testid="img-logo"
+              />
             </div>
             <div className="leading-tight">
-              <div className="font-display text-[15px]">Clean Water Campus</div>
-              <div className="text-xs text-muted-foreground">Donate • Share • Rally</div>
+              <div className="font-display text-[15px]">charity: water</div>
+              <div className="text-xs text-muted-foreground">Clean water changes everything</div>
             </div>
           </a>
 
@@ -64,7 +69,7 @@ export default function Home() {
                 const url = window.location.href;
                 const text = "Join my campus in supporting clean water — donate or share.";
                 if (navigator.share) {
-                  navigator.share({ title: "Clean Water Campus Challenge", text, url }).catch(() => {});
+                  navigator.share({ title: "charity: water", text, url }).catch(() => {});
                 } else {
                   navigator.clipboard?.writeText(url);
                 }
@@ -98,8 +103,8 @@ export default function Home() {
               </div>
 
               <h1 className="font-display text-4xl leading-[1.05] sm:text-6xl">
-                Clean water shouldn’t be a privilege.
-                <span className="block text-primary">Your campus can change that.</span>
+                Clean water changes everything.
+                <span className="block text-primary">Help fund sustainable projects.</span>
               </h1>
 
               <p className="max-w-xl text-base text-foreground/80 sm:text-lg" data-testid="text-hero-subtitle">
@@ -427,7 +432,7 @@ export default function Home() {
         <footer className="border-t bg-background/40">
           <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-10 sm:flex-row sm:items-center sm:justify-between">
             <div className="text-sm text-muted-foreground" data-testid="text-footer-copy">
-              © {new Date().getFullYear()} Clean Water Campus Challenge
+              © {new Date().getFullYear()} charity: water (prototype)
             </div>
             <div className="flex items-center gap-3">
               <a

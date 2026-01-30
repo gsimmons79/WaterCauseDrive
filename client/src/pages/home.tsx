@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { ArrowRight, Droplets, Heart, Share2, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -92,12 +91,7 @@ export default function Home() {
         {/* Hero */}
         <section className="relative mx-auto max-w-6xl px-4 pt-10 sm:pt-14">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="flex flex-col gap-6"
-            >
+            <div className="flex flex-col gap-6 animate-in fade-in slide-in-from-bottom-2 duration-500">
               <div className="inline-flex items-center gap-2 self-start rounded-full border bg-background/70 px-3 py-1 text-xs text-foreground/80">
                 <Sparkles className="size-3.5 text-primary" />
                 <span data-testid="text-hero-badge">A 7-day campus challenge</span>
@@ -143,13 +137,10 @@ export default function Home() {
               <div className="text-xs text-muted-foreground" data-testid="text-hero-disclaimer">
                 This is a prototype campaign page. Connect your real donation partner later.
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut", delay: 0.05 }}
-              className="noise overflow-hidden rounded-3xl border bg-card shadow-xl"
+            <div
+              className="noise overflow-hidden rounded-3xl border bg-card shadow-xl animate-in fade-in slide-in-from-bottom-2 duration-700 delay-100"
               data-testid="section-hero-video"
             >
               <div className="relative aspect-[4/5] bg-muted">
@@ -207,7 +198,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </section>
 

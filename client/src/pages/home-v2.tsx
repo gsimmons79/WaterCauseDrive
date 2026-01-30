@@ -150,7 +150,7 @@ export default function Home() {
               </div>
 
               <h1 className="font-display text-4xl leading-[1.05] sm:text-6xl" data-testid="text-hero-title">
-                Clean Water changes our World.
+                Clean Water Everywhere
                 <span className="block text-primary" data-testid="text-hero-title-accent">Help fund sustainable projects.</span>
               </h1>
 

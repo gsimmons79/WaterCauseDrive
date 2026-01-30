@@ -196,22 +196,17 @@ export default function Home() {
               data-testid="section-hero-video"
             >
               <div className="relative aspect-[4/5] bg-muted">
-                <video
+                <img
+                  src="/src/assets/images/hero-video-card.jpg"
+                  alt="People with clean water"
                   className="absolute inset-0 h-full w-full object-cover"
-                  data-testid="video-hero"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                >
-                  {/* Paste your Canva-free MP4 URL into src below */}
-                  <source src="https://example.com/your-canva-video.mp4" type="video/mp4" />
-                </video>
-
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+                  data-testid="img-hero-video-photo"
+                  loading="eager"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/25 to-transparent" />
 
                 <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <div className="glass rounded-2xl p-4">
+                  <div className="glass noise rounded-2xl p-4" data-testid="card-hero-square">
                     <div className="flex items-start justify-between gap-3">
                       <div>
                         <div className="text-xs text-muted-foreground" data-testid="text-hero-video-caption-kicker">

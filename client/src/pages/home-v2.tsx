@@ -149,9 +149,9 @@ export default function Home() {
                 <span data-testid="text-hero-badge">A 7-day campus challenge</span>
               </div>
 
-              <h1 className="font-display text-4xl leading-[1.05] sm:text-6xl">
-                Clean water changes everything.
-                <span className="block text-primary">Help fund sustainable projects.</span>
+              <h1 className="font-display text-4xl leading-[1.05] sm:text-6xl" data-testid="text-hero-title">
+                Clean Water changes our World.
+                <span className="block text-primary" data-testid="text-hero-title-accent">Help fund sustainable projects.</span>
               </h1>
 
               <p className="max-w-xl text-base text-foreground/80 sm:text-lg" data-testid="text-hero-subtitle">

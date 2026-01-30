@@ -254,7 +254,7 @@ export default function Home() {
             <div className="grid gap-8 p-6 sm:p-10 lg:grid-cols-[1fr_0.9fr]">
               <div className="flex flex-col gap-4">
                 <h2 className="font-display text-3xl sm:text-4xl" data-testid="text-cta1-title">
-                  Donate like a student. Impact like a movement.
+                  Donate like a student. Impact like a movement—globally.
                 </h2>
                 <p className="text-foreground/80" data-testid="text-cta1-subtitle">
                   Pick an amount, then share your pledge to challenge friends. This page is built to convert

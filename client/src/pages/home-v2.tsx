@@ -136,7 +136,7 @@ export default function Home() {
                       className="mt-2 max-w-xl text-sm text-foreground/80 sm:text-base"
                       data-testid="text-hero-photo-subtitle"
                     >
-                      Your donation helps communities access safe, reliable water—so school, health, and opportunity can follow.
+                      Your small gift helps communities access safe, reliable water—so school, health, and opportunity can be everywhere.
                     </div>
                   </div>
                 </div>

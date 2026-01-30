@@ -108,8 +108,8 @@ export default function Home() {
               />
               <div className="relative aspect-[16/7] bg-muted">
                 <img
-                  src="/src/assets/images/hero-clean-water.jpg"
-                  alt="Person smiling with clean water"
+                  src="/src/assets/images/hero-person.webp"
+                  alt="People smiling with clean water"
                   className="absolute inset-0 h-full w-full object-cover"
                   data-testid="img-hero-photo"
                   loading="eager"

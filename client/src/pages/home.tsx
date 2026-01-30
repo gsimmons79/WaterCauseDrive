@@ -24,15 +24,15 @@ export default function Home() {
           >
             <div className="grid size-9 place-items-center rounded-xl bg-primary/15 text-foreground">
               <img
-                src="/src/assets/images/water-drop-logo.jpg"
+                src="/charitywater-logo-horizontal-black.jpg"
                 alt="charity: water"
-                className="size-5 object-contain"
+                className="h-5 w-auto object-contain"
                 data-testid="img-logo"
               />
             </div>
             <div className="leading-tight">
               <div className="font-display text-[15px]">charity: water</div>
-              <div className="text-xs text-muted-foreground">Clean water changes everything</div>
+              <div className="text-xs text-muted-foreground">Student giving, global impact</div>
             </div>
           </a>
 
@@ -100,6 +100,12 @@ export default function Home() {
               className="noise relative overflow-hidden rounded-3xl border bg-card shadow-xl lg:col-span-2"
               data-testid="section-hero-photo"
             >
+              <img
+                src="/charitywater-logo-vertical-white.jpg"
+                alt="charity: water"
+                className="absolute right-5 top-5 z-10 hidden h-16 w-auto opacity-90 drop-shadow-sm sm:block"
+                data-testid="img-hero-logo"
+              />
               <div className="relative aspect-[16/7] bg-muted">
                 <img
                   src="/src/assets/images/hero-clean-water.jpg"

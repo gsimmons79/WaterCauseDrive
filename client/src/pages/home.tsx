@@ -93,6 +93,59 @@ export default function Home() {
       </header>
 
       <main id="top">
+        {/* Hero photo */}
+        <section className="relative mx-auto max-w-6xl px-4 pt-8 sm:pt-12">
+          <div className="noise overflow-hidden rounded-3xl border bg-card shadow-xl">
+            <div className="relative aspect-[16/7] bg-muted">
+              <img
+                src="/src/assets/images/hero-clean-water.jpg"
+                alt="Person smiling with clean water"
+                className="absolute inset-0 h-full w-full object-cover"
+                data-testid="img-hero-photo"
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/35 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+
+              <div className="relative p-6 sm:p-10">
+                <div className="inline-flex items-center gap-2 rounded-full border bg-background/70 px-3 py-1 text-xs text-foreground/80" data-testid="badge-hero-photo">
+                  <Droplets className="size-3.5 text-primary" />
+                  A moment of impact
+                </div>
+                <div className="mt-4 max-w-xl">
+                  <div className="font-display text-3xl leading-[1.05] sm:text-4xl" data-testid="text-hero-photo-title">
+                    Clean water, in hand.
+                  </div>
+                  <div className="mt-2 text-sm text-foreground/80 sm:text-base" data-testid="text-hero-photo-subtitle">
+                    Your donation helps communities access safe, reliable water—so school, health, and opportunity can follow.
+                  </div>
+                </div>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <Button
+                    className="rounded-full"
+                    data-testid="button-hero-photo-donate"
+                    onClick={() => document.getElementById("donate")?.scrollIntoView({ behavior: "smooth" })}
+                  >
+                    Donate now
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                  <Button
+                    variant="secondary"
+                    className="rounded-full"
+                    data-testid="button-hero-photo-share"
+                    onClick={() => {
+                      const url = window.location.href;
+                      navigator.clipboard?.writeText(url);
+                    }}
+                  >
+                    Copy share link
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Hero */}
         <section className="relative mx-auto max-w-6xl px-4 pt-10 sm:pt-14">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">

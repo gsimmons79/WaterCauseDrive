@@ -459,9 +459,9 @@ export default function Home() {
                       <ShieldCheck className="size-5" strokeWidth={2.25} />
                     </div>
                     <div>
-                      <div className="text-sm font-medium" data-testid="text-trust-title">Built for trust</div>
+                      <div className="text-sm font-medium" data-testid="text-trust-title">Built for Change</div>
                       <div className="text-sm text-muted-foreground" data-testid="text-trust-body">
-                        Clear story. Clear actions. Minimal friction.
+                        Your donation is secured by SSL encryption and fraud protection.
                       </div>
                     </div>
                   </div>

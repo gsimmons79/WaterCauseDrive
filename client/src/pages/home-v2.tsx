@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-40 border-b bg-background/60 backdrop-blur supports-[backdrop-filter]:bg-background/40">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3">
           <a
             href="#top"
             className="flex items-center gap-2"
@@ -94,8 +94,8 @@ export default function Home() {
 
       <main id="top">
         {/* Hero */}
-        <section className="relative mx-auto max-w-6xl px-4 pt-10 sm:pt-14">
-          <div className="grid gap-8 lg:gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+        <section className="relative mx-auto max-w-6xl px-4 pt-6 sm:pt-14">
+          <div className="grid gap-6 sm:gap-8 lg:gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <div
               className="noise relative overflow-hidden rounded-3xl border bg-card shadow-xl lg:col-span-2"
               data-testid="section-hero-photo"
@@ -143,13 +143,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-6 animate-in fade-in slide-in-from-bottom-2 duration-500">
+            <div className="flex flex-col gap-5 sm:gap-6 animate-in fade-in slide-in-from-bottom-2 duration-500">
               <div className="inline-flex items-center gap-2 self-start rounded-full border bg-background/70 px-3 py-1 text-xs text-foreground/80">
                 <Sparkles className="size-3.5 text-primary" />
                 <span data-testid="text-hero-badge">A 7-day campus challenge</span>
               </div>
 
-              <h1 className="font-display text-4xl leading-[1.05] sm:text-6xl" data-testid="text-hero-title">
+              <h1 className="font-display text-3xl leading-[1.05] sm:text-6xl" data-testid="text-hero-title">
                 Clean Water Everywhere
                 <span className="block text-primary" data-testid="text-hero-title-accent">Help fund sustainable projects.</span>
               </h1>

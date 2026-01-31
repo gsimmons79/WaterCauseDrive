@@ -521,9 +521,13 @@ export default function Home() {
                   <iframe
                     title="Water Bucket Hero"
                     src="https://replit.com/@gsimmons79/Water-Bucket-Hero"
+                    width="100%"
+                    height={700}
+                    style={{ border: 0, borderRadius: 16, overflow: "hidden" }}
                     className="absolute inset-0 h-full w-full"
                     data-testid="iframe-game"
                     loading="lazy"
+                    allowFullScreen
                   />
                 </div>
                 <div className="border-t bg-background/70 px-4 py-3 text-xs text-muted-foreground" data-testid="text-game-note">

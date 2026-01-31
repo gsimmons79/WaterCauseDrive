@@ -249,6 +249,69 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Game */}
+        <section className="mx-auto max-w-6xl px-4 pt-10 sm:pt-14" data-testid="section-game">
+          <div className="noise overflow-hidden rounded-3xl border bg-card shadow-xl">
+            <div className="grid gap-6 p-6 sm:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+              <div className="flex flex-col gap-3">
+                <div className="text-xs text-muted-foreground" data-testid="text-game-kicker">Play + share</div>
+                <h2 className="font-display text-2xl sm:text-3xl" data-testid="text-game-title">
+                  Water Bucket Hero
+                </h2>
+                <p className="text-sm text-foreground/80 sm:text-base" data-testid="text-game-body">
+                  Take a quick break and play — then send it to your friends to keep the Clean Water Campus Challenge moving.
+                </p>
+
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <Button
+                    className="rounded-full"
+                    data-testid="button-game-open"
+                    onClick={() => window.open("https://replit.com/@gsimmons79/Water-Bucket-Hero", "_blank", "noopener,noreferrer")}
+                  >
+                    Open game in a new tab
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                  <Button
+                    variant="secondary"
+                    className="rounded-full"
+                    data-testid="button-game-copy"
+                    onClick={() => {
+                      navigator.clipboard?.writeText("https://replit.com/@gsimmons79/Water-Bucket-Hero");
+                    }}
+                  >
+                    Copy game link
+                  </Button>
+                </div>
+
+                <a
+                  href="https://replit.com/@gsimmons79/Water-Bucket-Hero"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs text-foreground/70 underline underline-offset-4 hover:text-foreground transition"
+                  data-testid="link-game"
+                >
+                  https://replit.com/@gsimmons79/Water-Bucket-Hero
+                </a>
+              </div>
+
+              <div className="overflow-hidden rounded-2xl border bg-background/40">
+                <div className="relative aspect-[9/16] sm:aspect-[16/10] bg-muted">
+                  <iframe
+                    title="Water Bucket Hero"
+                    src="https://replit.com/@gsimmons79/Water-Bucket-Hero"
+                    className="absolute inset-0 h-full w-full"
+                    data-testid="iframe-game"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="border-t bg-background/70 px-4 py-3 text-xs text-muted-foreground" data-testid="text-game-note">
+                  If the embed doesn’t load, use “Open game in a new tab.”
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA #1 */}
         <section id="donate" className="mx-auto max-w-6xl px-4 pt-12 sm:pt-16">
           <div className="noise overflow-hidden rounded-3xl border bg-card shadow-xl">
